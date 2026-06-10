@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Translator - CodeAlpha</title>
+    <!-- Linking our CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for sleek icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1>Smart Translator</h1>
+            <p>CodeAlpha Internship Task 1</p>
+        </header>
+
+        <div class="translator-wrapper">
+            <!-- Source Input Section -->
+            <div class="box input-box">
+                <div class="controls">
+                    <select id="source-lang">
+                        <option value="en" selected>English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                    <!-- Voice Input Button -->
+                    <button id="mic-btn" title="Speak"><i class="fa-solid fa-microphone"></i></button>
+                </div>
+                <textarea id="source-text" placeholder="Type or speak here..."></textarea>
+            </div>
+
+            <!-- Target Output Section -->
+            <div class="box output-box">
+                <div class="controls">
+                    <select id="target-lang">
+                        <option value="es" selected>Spanish</option>
+                        <option value="en">English</option>
+                        <option value="fr">French</option>
+                        <option value="de">German</option>
+                        <option value="it">Italian</option>
+                        <option value="ar">Arabic</option>
+                        <option value="hi">Hindi</option>
+                    </select>
+                    <div class="action-buttons">
+                        <!-- Text-to-Speech Button -->
+                        <button id="speak-btn" title="Listen"><i class="fa-solid fa-volume-high"></i></button>
+                        <!-- Copy to Clipboard Button -->
+                        <button id="copy-btn" title="Copy"><i class="fa-regular fa-copy"></i></button>
+                    </div>
+                </div>
+                <textarea id="target-text" placeholder="Translation will appear here..." readonly></textarea>
+            </div>
+        </div>
+        
+        <button id="translate-btn" class="primary-btn">Translate Now</button>
+    </div>
+
+    <!-- Linking our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
