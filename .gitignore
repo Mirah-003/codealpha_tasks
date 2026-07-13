@@ -1,1 +1,21 @@
+# Virtual environments
 venv/
+*/venv/
+env/
+.env/
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.log
+
+# IDE & Workspace configurations
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
